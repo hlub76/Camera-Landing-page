@@ -1,0 +1,194 @@
+/* Base */
+*{
+  margin:0px;
+  padding: 0px;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+  padding: 15px;
+  box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav .logo{
+  display: inline-block;
+  width: 30%;
+}
+
+nav .logo img{
+  width: 120px;
+}
+
+nav .navigation{
+  width: 68%;
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+
+nav .navigation{
+  margin-top: 30px;
+}
+
+nav .navigation ul li{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+nav .navigation ul li a{
+  text-decoration: none;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+nav .navigation ul li a:hover,
+nav .navigation ul li a:active,
+nav .navigation ul li a:focus{
+  text-decoration: underline;
+}
+
+/* Header */
+header{
+  background-image: url(/images/background-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 120px 0px;
+  color: #333333;
+}
+header .content{
+  max-width: 992px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+header .content h1{
+  font-size: 42px;
+  color: white;
+}
+header .content p{
+  font-size: 18px;
+  color: white;
+}
+header .content button{
+  font-size: 18px;
+  margin-top: 15px;
+  border: none;
+  color: #ffffff;
+  background-color: #d48c79;
+  padding:12px 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+}
+/* Main content */
+
+section{
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+/* article */
+article{
+  width: 65%;
+  padding: 15px;
+  display: inline-block;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+article h3{
+  font-size: 28px;
+}
+article p{
+  margin-bottom: 20px;
+}
+article p small{
+  color: #d48c79;
+}
+article img{
+  max-width: 100%;
+}
+
+/* Aside */
+aside{
+  width:25%;
+  display: inline-block;
+  padding: 15px;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.3);
+  float:right;
+}
+aside .post{
+  border-bottom: 1px solid #888888;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+aside .post h4{
+  font-size: 20px;
+}
+aside .post p{
+  font-size: 14px;
+  margin: 14px 0px;
+}
+aside .post a {
+  text-decoration: none;
+  color: #d48c79;
+}
+aside .post a:hover,
+aside .post :active,
+aside .post :focus{
+  text-decoration: underline;
+}
+/* Footer */
+footer{
+  padding: 20px 15px;
+  background-color: #111111;
+}
+footer p{
+  color: #ffffff;
+  font-size: 18px;
+}
+/* End of Footer */
+
+
+
+/* Media queries */
+/* tablets */
+@media screen 
+and (max-width: 768px){
+  /* navigation bar */
+  nav .logo{
+    width: 100%;
+    text-align: center;
+  }
+  nav .navigation{
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+  nav .navigation ul{
+    margin-top: 10px;
+  }
+  header{
+    padding: 40px 0px;
+  }
+  header .content h1{
+    font-size: 32px;;
+  }
+  /* Main content */
+  section{
+    padding: 30px 0px;
+  }
+  article{
+    width: 90%;
+    display: block;
+    margin: 0px auto 20px; 
+  }
+  aside{
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    float: none;
+  }
+}
